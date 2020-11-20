@@ -1,6 +1,7 @@
 click==7.1.2
 Dumper==1.2.0
 fastapi==0.61.2
+gunicorn==20.0.4
 h11==0.11.0
 joblib==0.17.0
 numpy==1.19.4
