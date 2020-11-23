@@ -21,10 +21,6 @@ class Account(BaseModel):
     total_payed: int
     status: int
 
-
-app = FastAPI()
-
-
 @app.post('/predictions')
 def predictions(accounts: List[Account]):
     data = pd.DataFrame([account.__dict__ for account in accounts])
