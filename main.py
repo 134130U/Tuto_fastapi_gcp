@@ -4,10 +4,10 @@ import joblib
 from pydantic import BaseModel
 import pandas as pd
 from typing import List
+import os
 # from dumper import dump
 
-model = joblib.load('Tuto_fastapi_gcp/model.sav')
-
+model = joblib.load(f'{os.getcwd()}/model.sav')
 app = FastAPI()
 
 
