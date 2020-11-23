@@ -6,12 +6,13 @@ import pandas as pd
 from typing import List
 # from dumper import dump
 
-model = joblib.load('Tuto_fastapi_gcp/model.sav')
+model = joblib.load('model.sav')
 
 app = FastAPI()
 
+
 @app.get('/')
-def index():
+async def index():
     return {"greeting": "hello Babou"}
 
 
