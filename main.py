@@ -20,6 +20,7 @@ class Account(BaseModel):
     balance: int
     total_payed: int
     status: int
+    
 
 @app.post('/predictions')
 def predictions(accounts: List[Account]):
