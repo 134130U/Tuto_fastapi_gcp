@@ -20,7 +20,7 @@ class Account(BaseModel):
     balance: int
     total_payed: int
     status: int
-    
+
 
 @app.post('/predictions')
 def predictions(accounts: List[Account]):
@@ -30,4 +30,4 @@ def predictions(accounts: List[Account]):
 
 
 if __name__ == '__main__':
-    uvicorn.run(app,host = '127.0.0.1', port = 8000)
+    uvicorn.run(app,host = '0.0.0.0', port = 8000)
